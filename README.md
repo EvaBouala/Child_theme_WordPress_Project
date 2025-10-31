@@ -40,8 +40,8 @@ Thème WordPress orienté portfolio et storytelling, utilisé ici comme base pou
 - `front-page.php` 
 
 ### Avant du site :
-![alt text](image.png)
+![alt text](image.png) --> Si elle ne s'ouvre pas elle se trouve également avec les autres fichiers 
 
 ### Après du site :
-![alt text](image-1.png)
-![alt text](image-2.png)
+![alt text](image-1.png) --> Même chose
+![alt text](image-2.png) --> Même chose
