@@ -1,0 +1,263 @@
+/*
+Theme Name: Baldur's Gate 3 Child
+Template: creative-portfolio-lite
+Version: 1.0.0
+Text Domain: bg3-storytelling-child
+Description: Thème enfant basé sur creative-portfolio-lite (footer personnalisé).
+*/
+
+/* Ton CSS perso ici au besoin */
+
+header, .navbar {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+    background-color: transparent ;
+    text-align : center;   
+    background-color: var(--couleur-secondaire);
+}
+
+.nav-list {
+    list-style: none;  /* supprime les points pour lister */
+    margin: 0;
+    padding: 0; 
+    bottom: 0; 
+    display: flex;
+    justify-content: center; /* centre les liens horizontalement */
+    gap: 30px;  
+    width: fit-content;              
+}
+
+.navbar {
+    position: fixed;
+    top: 2px;                    
+    left: 50%;                    
+    transform: translateX(-50%);   
+    width: fit-content;           
+    max-width: 100%;              
+    margin: 0 auto;              
+    background: rgba(246, 216, 216, 0.8);  
+    padding: 15px 30px;        
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.nav-list a { 
+    text-decoration: none;
+    color: #f6f3f3;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 5px 0;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list .active a { /* gère le style au survol */
+    color: #ffc061;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #111;
+    color: #f2e9d8;
+    font-size: 0.9em;
+    margin-top: auto;
+}
+
+.story-section {
+    background-color: transparent;
+    padding: 100px 10%;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgb(24, 1, 1), rgb(64, 32, 13), rgb(24, 16, 5));
+}
+
+.story-intro {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.story-intro h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #e0b97d;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.story-intro p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #dcd3c2;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-content: center;
+    align-items: start;
+}
+
+.story-act {
+    background: rgba(30, 30, 30, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.story-act:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(224, 185, 125, 0.2);
+}
+
+.story-act h2 {
+    color: #caa869;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.story-act p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e9e5dc;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #f2e9d8;
+    background-color: transparent;
+    padding: 80px 10%;
+    text-align: center;
+    position: relative; 
+    flex-direction: column;
+    overflow: hidden;
+}
+
+section h1 {
+    color: #a96735;
+    margin-bottom: 20px;
+}
+
+section + section {
+    margin-top: 0; /* astuce espacement : pas besoin de marge, elles s’enchaînent naturellement */
+}
+
+#astarion {
+    background-image: linear-gradient(to bottom,rgb(24, 16, 5), rgb(91, 18, 18), rgb(24, 16, 5));
+    background-size: cover;
+    background-position: center;
+}
+
+#astarion img {
+    width: 40%;
+    border-radius: 12px;
+    margin-top: 40px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+
+}
+
+#karlach {
+    background-image: transparent;
+    background-size: cover;
+    background-position: center;
+}
+
+#karlach img {
+    width: 40%;
+    border-radius: 12px;
+    margin-top: 40px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+}
+
+#gale {
+    background-image: transparent;
+    background-size: cover;
+    background-position: center;
+}
+
+#gale img {
+    width: 40%;
+    border-radius: 12px;
+    margin-top: 40px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+}
+
+#wyll {
+    background-image: transparent;
+    background-size: cover;
+    background-position: center;
+}
+
+#wyll img {
+    width: 40%;
+    border-radius: 12px;
+    margin-top: 40px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+}
+
+#lazael {
+    background-image: transparent;
+    background-size: cover;
+    background-position: center;
+}
+
+#lazael img {
+    width: 40%;
+    border-radius: 12px;
+    margin-top: 40px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+}
+
+#shadowheat {
+    background-image: transparent;
+    background-size: cover;
+    background-position: center;
+}
+
+#shadowheat img {
+    width: 40%;
+    border-radius: 12px;
+    margin-top: 40px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+}
+
+#astarion img:hover,
+#karlach img:hover,
+#gale img:hover,
+#wyll img:hover,
+#lazael img:hover,
+#shadowheat img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(224, 185, 125, 0.2);
+}
